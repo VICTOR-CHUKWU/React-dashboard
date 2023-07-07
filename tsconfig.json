@@ -18,9 +18,22 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@components": ["components"],
+      "@styles/*": ["styles/*"],
+      "@styles": ["styles"],
+      "@pages": ["pages/"],
+      "@page/*": ["pages/*"],
+      "@services": ["services"],
+      "@services/*": ["services/*"],
+      "@redux/*": ["redux/*"],
+      "@redux": ["redux"]
+    }
   },
   "include": [
-    "src"
+    "react-app-env.d.ts", "**/*.d.ts", "**/*.ts", "**/*.tsx"
   ]
 }
